@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: hello-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/chenyu1394/hello-config.git
+          search-paths: /repo
+          username: 1394777162@qq.com
+          password: cy5201314@@
+server:
+  port: 8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
